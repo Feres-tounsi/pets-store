@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>pets Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    ></script>
+    <link
+      href="https://cdn-icons-png.flaticon.com/512/2809/2809814.png"
+      rel="shortcut icon "
+      type="x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Pets Store</a>
+        <form class="d-flex" role="search">
+          <input
+            id="search"
+            aria-label="Search"
+            class="form-control me-2"
+            placeholder="Search"
+            type="search"
+          />
+          <button id="searchBtn" class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+        <h1 id="panierBtn">Basket</h1>
+
+        <ul id="panier" class="panier displayNone">
+          <button id="buyBtn" class="panierBtn">Buy ALL</button>
+        </ul>
+      </div>
+    </nav>
+    <section id="about" class="about">
+      <div class="image">
+        <img alt="" src="image/contact_img.png" />
+      </div>
+
+      <div class="content">
+        <h2>Welcome to our <span>pets Store</span></h2>
+        <p>Here You Find Your Favourite, Lovely Pets, So Here We Go...</p>
+      </div>
+    </section>
+    <section>
+      <section id="mainSection" class="displayNone">
+        <main id="petsBox" class="petsBox"></main>
+        <section id="contact" class="contact">
+          <div class="image">
+            <img alt="imgs" src="image/about_img.png" />
+          </div>
+          <form action="">
+            <h2>contact us</h2>
+            <input class="box" placeholder="your name" type="text" />
+            <input class="box" placeholder="your email" type="email" />
+            <input class="box" placeholder="your number" type="tumber" />
+            <textarea
+              id=""
+              cols="30"
+              name=""
+              placeholder="your message"
+              rows="10"
+            ></textarea>
+            <input class="btn" type="submit" value="send message" />
+          </form>
+        </section>
+        <footer class="footer">
+          <div class="share">
+            <a class="btn" href="https://www.facebook.com/ferees.tounsi/">
+              <i class="fab fa-facebook-f"></i> facebook
+            </a>
+            <a class="btn" href="https://twitter.com/tounsiferes1">
+              <i class="fab fa-twitter"></i> twitter
+            </a>
+            <a class="btn" href="https://www.instagram.com/ferestounsy/">
+              <i class="fab fa-instagram"></i> instagram
+            </a>
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/feres-tounsi-9194bb196/"
+            >
+              <i class="fab fa-linkedin"></i> linkedin
+            </a>
+          </div>
+          <div class="credit">
+            created by <span> mr. Fares Tounsi </span> | mr.Ilyess Dridi
+          </div>
+        </footer>
+      </section>
+
+      <section id="purchaseSection" class="purchaseSection">
+        <div class="body-box">
+          <div class="header-box"></div>
+
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-check-circle fa-w-16 content-icon"
+            data-fa-processed=""
+            data-icon="check-circle"
+            data-prefix="fas"
+            height="98px"
+            role="img"
+            viewBox="0 0 512 512"
+            width="98px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+              fill="currentColor"
+            ></path>
+          </svg>
+
+          <div class="content-box">
+            <i class="content-icon fas fa-check-circle"></i>
+            <div class="content-text">complete transaction</div>
+          </div>
+
+          <button id="return">Return</button>  
+          
+        </div>
+      </section>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+

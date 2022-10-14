@@ -1,0 +1,395 @@
+body {
+    max-width: 100vw;
+}
+
+.main {
+    display: none;
+}
+
+.petsBox {
+    margin: 20px;
+    padding: 40px 20px;;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.shopTitle {
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkorange;
+
+}
+
+.petContainer {
+    width: 350px;
+    min-width: 350px;
+    min-height: 450px;
+    margin: 20px 10px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.petContainerImage {
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.contact {
+    padding: 2rem 0;
+
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.contact .image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+}
+
+.contact .image img {
+    width: 100%;
+}
+
+.contact form {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+    padding: 2rem 7%;
+}
+
+.contact form .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.contact form .btn:hover {
+    background: #130f40;
+}
+
+.contact form h3 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: #130f40;
+}
+
+.contact form .box, .contact form textarea {
+    width: 100%;
+    border-bottom: 0.2rem solid #130f40;
+    border-width: .1rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    color: #130f40;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+}
+
+.contact form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.footer {
+    background-color: #130f40;
+    width: 100%;
+    background-image: url(image/bottom_wave.png);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 2rem;
+}
+
+.footer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 100%;
+}
+
+.footer .share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .share a {
+    color: #fff;
+    border-color: #fff;
+}
+
+.footer .share a:hover {
+    color: #130f40;
+}
+
+.footer .share a::before {
+    background: #fff;
+}
+
+.footer .share a i {
+    padding-right: .5rem;
+}
+
+.footer .credit {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 2.5rem;
+}
+
+.footer .credit span {
+    color: #e67e22;
+}
+
+
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+}
+
+.about .image img {
+    width: 100%;
+}
+
+
+.about .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+}
+
+.about .content h3 {
+    color: #130f40;
+    font-size: 4rem;
+}
+
+.about .content h3 span {
+    color: #e67e22;
+}
+
+.about .content p {
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.panier { 
+    
+   border-radius: 20px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    width: 350px;
+    height: 450px;
+    background-color: black;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.panier:hover {
+    cursor: pointer;
+    box-shadow: rgb(157, 149, 149);
+}
+
+
+.panierItemContainer {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px white solid;
+    color: #fff;
+    list-style: none;
+
+}
+
+
+.displayNone {
+    display: none !important;
+}
+
+
+.petContainerButton {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.petContainerButton:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.body-box {
+    width: 250px;
+    height: 250px;
+    background-color: #323e44;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.header-box {
+    width: 250px;
+    height: 40px;
+    background-color: #27a54b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.exit-button {
+    color: white;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content-box {
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-box > * {
+    margin-top: 30px;
+}
+
+.content-icon {
+    font-size: 75px;
+    color: #27a54b;
+}
+
+.content-text {
+    font-family: "Poppins", sans-serif;
+    padding: 5px;
+}
+#buyBtn{
+    background-color: #13aa52;
+          border: 1px solid #13aa52;
+          border-radius: 4px;
+          box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+          box-sizing: border-box;
+          color: #fff;
+          cursor: pointer;
+          font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          outline: none;
+          outline: 0;
+          padding: 10px 25px;
+          text-align: center;
+          transform: translateY(0);
+          transition: transform 150ms, box-shadow 150ms;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
+        
+        #buyBtn:hover {
+          box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+          transform: translateY(-2px);
+        }
+        
+        @media (min-width: 768px) {
+            #buyBtn{
+            padding: 10px 30px;
+          }
+        }
+    
+
+    
+    #return {
+          background-color: #13aa52;
+          border: 1px solid #13aa52;
+          border-radius: 4px;
+          box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+          box-sizing: border-box;
+          color: #fff;
+          cursor: pointer;
+          font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          outline: none;
+          outline: 0;
+          padding: 10px 25px;
+          text-align: center;
+          transform: translateY(0);
+          transition: transform 150ms, box-shadow 150ms;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
+        
+        #return:hover {
+          box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+          transform: translateY(-2px);
+        }
+        
+        @media (min-width: 768px) {
+          #return{
+            padding: 10px 30px;
+          }
+        }
+    
+    
+   
+    
+
